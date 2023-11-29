@@ -1,0 +1,43 @@
+#services {
+    .service-item {
+        // display: flex;
+        .service-item-inner {
+            padding: $card-padding;
+            border-radius: $border-radius;
+            text-align: center;
+            transform: translateY(0);
+            transition: .4s;
+
+            &:hover {
+                transform: translateY(-.625rem);
+            }
+
+            img {
+                margin-bottom: $m-0-75;
+            }
+
+            h3 {
+                color: #fff;
+                margin-bottom: $m-0-5;
+            }
+
+            p {
+                color: #fff;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .search-contact-text {
+        text-align: center;
+        margin-top: $m-1-5;
+    
+        p {
+            a {
+                // color: $color-primary !important;
+                color: var(--color-primary) !important;
+                text-decoration: none;
+            }
+        }
+       }
+}

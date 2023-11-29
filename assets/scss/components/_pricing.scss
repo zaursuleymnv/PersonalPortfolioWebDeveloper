@@ -1,0 +1,72 @@
+#pricing {
+    .prices {
+
+        .prices-item {
+            position: relative;
+            padding: $card-padding;
+            // background-color: $color-white;
+            background-color: var(--color-white);
+            border-radius: $border-radius;
+            text-align: center;
+            box-shadow: $box-shadow;
+
+            h3.plan {
+                margin: $m-0-75 0;
+            }
+
+            h3.price {
+                font-size: $h1-font-size;
+                font-weight: $font-semibold;
+
+                em {
+                    font-style: normal;
+                    font-size: $small-font-size;
+                    margin-right: $m-0-5;
+                    vertical-align: super;
+                }
+
+                span {
+                    font-size: $normal-font-size;
+                    margin-left: $m-0-75;
+                }
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                margin-top: $m-1;
+            }
+
+            &.premium {
+                padding: 3.25rem 2.5rem;
+                z-index: 1;
+            }
+
+            .recommended-badge {
+                position: absolute;
+                top: 2.5rem;
+                left: 0;
+                transform: rotate(-90deg);
+                color: #fff;
+                // background-color: $color-primary;
+                background-color: var(--color-primary);
+                padding: .4rem .75rem;
+                font-size: $small-font-size;
+                border-radius: $border-radius 0 0 $border-radius;
+            }
+        }
+
+        &.premium {
+            margin-top: -1.5rem;
+
+        }
+        &:nth-child(1) {
+            padding-left: 15px;
+        }
+        &:nth-child(3) {
+            padding-right: 15px;
+        }
+    }
+}

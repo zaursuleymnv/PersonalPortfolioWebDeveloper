@@ -1,0 +1,39 @@
+$header-height: 3.5rem;
+
+//colors
+$primary-color-hue: 352;
+// $color-primary: hsl(352, 75%, 60%);
+$color-primary: hsl($primary-color-hue, 75%, 60%);
+$color-dark: hsl(252, 30%, 17%);
+$color-white: hsl(252, 30%, 100%);
+$color-light: hsl(252, 30%, 92%);
+$color-gray: hsl(252, 15%, 65%);
+
+
+//font
+$body-font: 'Rubik', sans-serif;
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.25rem;
+$normal-font-size: 1rem;
+$small-font-size: .875rem;
+$font-medium: 400;
+$font-semibold: 600;
+
+//margin
+$m-0-5: .5rem;
+$m-0-75: .75rem;
+$m-1: 1rem;
+$m-1-5: 1.5rem;
+$m-2: 2rem;
+$m-2-5: 2.5rem;
+
+//card padding
+$card-padding: 1.9rem .95rem;
+
+//border-radius
+$border-radius: 1.25rem;
+
+//box-shadow
+$box-shadow: 0px 5px 20px rgba(69, 67, 96, 0.1);
+$shadow: rgba(10, 22, 50, .24);

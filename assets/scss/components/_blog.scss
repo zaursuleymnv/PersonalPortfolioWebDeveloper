@@ -1,0 +1,95 @@
+#blog {
+    .blog-item {
+        .inner {
+            // background-color: $color-white;
+            background-color: var(--color-white);
+            overflow: hidden;
+            border-radius: $border-radius;
+            transform: translateY(0);
+            transition: .3s;
+
+            &:hover {
+                transform: translateY(-.98rem);
+            }
+            .thumb {
+                position: relative;
+                overflow: hidden;
+                .category {
+                    position: absolute;
+                    left: 1.25rem;
+                    top: 0;
+                    color: #fff;
+                    text-decoration: none;
+                    // background-color: $color-primary;
+                    background-color: var(--color-primary);
+                    border-radius: 0 0 .98rem .98rem;
+                    padding: .12rem .5rem;
+                    z-index: 1;
+                }
+                img {
+                    transform: scale(1);
+                    transition: .3s;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+
+            .details {
+                padding: 1.25rem;
+                h3.title {
+                    line-height: 1.2;
+                    a {
+                        text-decoration: none;
+                        &:hover {
+                            // color: $color-primary !important;
+                            color: var(--color-primary) !important;
+                        }
+                    }
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    // color: $color-gray;
+                    color: var(--color-gray);
+                    font-size: $small-font-size;
+                    margin-top: .5rem;
+                    li {
+                        display: inline-block;
+                        &:not(:last-child) {
+                            margin-right: .6rem;
+                        }
+                        &:not(:last-child)::after {
+                            content: '';
+                            display: inline-block;
+                            width: .19rem;
+                            height: .19rem;
+                            // background: $color-gray;
+                            background: var(--color-gray);
+                            border-radius: 50%;
+                            margin-left: .6rem;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .details {
+                    h3.title {
+                        a {
+                            // color: $color-primary !important;
+                            color: var(--color-primary) !important;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

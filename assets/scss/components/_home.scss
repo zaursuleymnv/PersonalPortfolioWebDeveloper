@@ -1,0 +1,204 @@
+#home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        height: 100vh;
+        width: 100%;
+
+        .intro {
+            max-width: 540px;
+            text-align: center;
+            margin: auto;
+
+            .img-wrapper {
+                position: relative;
+                margin: 0 auto;
+                max-width: 300px;
+                margin-bottom: $m-2;
+                img {
+                    position: relative;
+                    z-index: 10;
+                    vertical-align: middle;
+                    margin: 0;
+                }
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                }
+
+                &::before {
+                    background-color: var(--color-primary-light);
+                    animation: animate__before 8s ease-in-out infinite;
+                }
+                &::after {
+                    background-color: var(--color-primary);
+                }
+                &::after,
+                img {
+                    animation: animate__after 8s ease-in-out infinite;
+                }
+            }
+
+            h1 {
+                span {
+                    color: var(--color-primary);
+                }
+            }
+
+            #typed-text {
+                display: inline-flex; 
+                align-items: center;
+                font-family: monospace;
+                white-space: pre-wrap;
+                margin-bottom: $m-1-5;
+
+            }
+
+            .typed-cursor {
+                color: var(--color-primary) !important; 
+                font-size: $h1-font-size; 
+              }
+
+              .icon {
+                color: var(--color-primary);
+              }
+
+            img {
+                margin-bottom: $m-1;
+            }
+
+            .share-btn_wrapper {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                cursor: pointer;
+                width: 8rem;
+                height: 3rem;
+                margin: 0 auto;
+                margin-bottom: $m-2;
+                background-color: #EEEEED;
+                border-radius: 80px;
+                padding: 0 18px;
+                will-change: transform;
+                transition: all .2s ease-in-out;
+            
+                span {
+                    position: absolute;
+                    z-index: 99;
+                    width: 8rem;
+                    height: 3rem;
+                    border-radius: $border-radius;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: $normal-font-size;
+                    text-align: center;
+                    line-height: 3rem;
+                    letter-spacing: 2px;
+                    color: var(--color-light);
+                    background-color: var(--color-dark);
+                    padding: 0 18px;
+                    transition: all 1.2s ease;
+                }
+            
+                .icon-wrapper {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 8rem;
+                    height: 2.5rem;
+                    border-radius: $border-radius;
+                    column-gap: 7px;
+            
+                    a {
+                        opacity: 0;
+                        transform: scale(.1);
+                        transition: .3s ease;
+                        i {
+                            font-size: 1.1rem;
+                            color: $color-dark;
+                            will-change: transform;
+                            transition: .2s ease;
+    
+                            &:hover {
+                                transform: translateY(-4px);
+                            }
+                        }
+
+                        &:nth-of-type(1){
+                            transition-delay: 1.1s;
+                        }
+                        &:nth-of-type(2){
+                            transition-delay: .9s;
+                        }
+                        &:nth-of-type(3){
+                            transition-delay: .7s;
+                        }
+                        &:nth-of-type(4){
+                            transition-delay: .4s;
+                        }
+                    }
+                }
+            
+                &:hover {
+                    transform: scale(1.1);
+            
+                    span {
+                        transition-delay: .25s;
+                        transform: translateX(-280px)
+                    }
+            
+                    a {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            .scroll-down {
+                position: absolute;
+                left: 0;
+                bottom: $m-2-5;
+                width: 100%;
+
+                .mouse-wrapper {
+                    font-size: $small-font-size;
+                    display: block;
+                    margin: auto;
+                    max-width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+
+                    span.mouse {
+                        position: relative;
+                        // border: 2px solid $color-dark;
+                        border: 2px solid var(--color-dark);
+                        display: block;
+                        height: 1.75rem;
+                        width: 1.25rem;
+                        margin: auto;
+                        border-radius: $border-radius;
+                        margin-top: $m-0-75;
+
+                        .wheel {
+                            position: absolute;
+                            left: 40%;
+                            top: $m-0-5;
+                            width: 0.25rem;
+                            height: 0.25rem;
+                            // background-color: $color-dark;
+                            background-color: var(--color-dark);
+                            border-radius: 50%;
+                            display: block;
+                            animation: ani-mouse 2s linear infinite;
+                        }
+                    }
+                }
+            }
+
+        }
+}
