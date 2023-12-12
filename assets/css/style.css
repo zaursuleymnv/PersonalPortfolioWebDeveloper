@@ -1334,8 +1334,11 @@ section {
   background-color: var(--color-primary);
   border-radius: 50%;
   text-align: center;
-  line-height: 28px;
-  font-size: 1.6rem;
+  line-height: 23px;
+  font-size: 1.215rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.3s;
   cursor: pointer;
   opacity: 0;
