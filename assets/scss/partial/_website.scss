@@ -249,7 +249,7 @@ section {
             right: -100%;
             width: 80%;
             height: 100%;
-            background-color: $color-white;
+            background-color: var(--color-light);
             padding: 4rem 0 0 3rem;
             border-radius: 1rem 0 0 1rem;
             z-index: 100;
@@ -263,6 +263,8 @@ section {
             .nav-close-btn {
                 display: block !important;
             }
+            // box-shadow: -10px 0px 43px -14px rgba(66, 68, 90, 0.68);
+            box-shadow: -10px 0px 43px -14px rgba(10, 10, 14, 0.63);
         }
 
         .show-menu {

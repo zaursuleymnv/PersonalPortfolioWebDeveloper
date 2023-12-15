@@ -210,11 +210,12 @@ section {
     right: -100%;
     width: 80%;
     height: 100%;
-    background-color: hsl(252, 30%, 100%);
+    background-color: var(--color-light);
     padding: 4rem 0 0 3rem;
     border-radius: 1rem 0 0 1rem;
     z-index: 100;
     transition: 0.3s;
+    box-shadow: -10px 0px 43px -14px rgba(10, 10, 14, 0.63);
   }
   nav .nav-menu .nav-menu-list {
     flex-direction: column;
