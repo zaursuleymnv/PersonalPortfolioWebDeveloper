@@ -1273,6 +1273,10 @@ section {
   flex: 1;
   margin-bottom: 1.5rem;
 }
+#portfolio .portfolio-container .portfolio-item:hover img {
+  scale: 1.043;
+  transition: 0.6s;
+}
 #portfolio .portfolio-container .portfolio-item.hide {
   display: none;
   visibility: hidden;
@@ -1287,6 +1291,14 @@ section {
 #portfolio .portfolio-container .portfolio-item .portfolio-item-inner {
   position: relative;
   overflow: hidden;
+}
+#portfolio .portfolio-container .portfolio-item .portfolio-item-inner .portfolio-item-thumbnail {
+  height: 336px;
+}
+#portfolio .portfolio-container .portfolio-item .portfolio-item-inner .portfolio-item-thumbnail img {
+  min-height: 100%;
+  object-fit: cover;
+  transition: 0.6s;
 }
 #portfolio .portfolio-container .portfolio-item .portfolio-item-inner .portfolio-item-thumbnail .mask {
   position: absolute;

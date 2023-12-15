@@ -40,6 +40,13 @@
         .portfolio-item {
             flex: 1;
             margin-bottom: $m-1-5;
+
+            &:hover {
+                img {
+                    scale: 1.043;
+                    transition: .6s;
+                }
+            }
     
             &.hide {
                 display: none;
@@ -58,6 +65,13 @@
                 overflow: hidden;
     
                 .portfolio-item-thumbnail {
+                    height: 336px;
+
+                    img {
+                        min-height: 100%;
+                        object-fit: cover;
+                        transition: .6s;
+                    }
     
                     .mask {
                         position: absolute;
