@@ -1291,6 +1291,7 @@ section {
 #portfolio .portfolio-container .portfolio-item .portfolio-item-inner {
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
 }
 #portfolio .portfolio-container .portfolio-item .portfolio-item-inner .portfolio-item-thumbnail {
   height: 336px;
